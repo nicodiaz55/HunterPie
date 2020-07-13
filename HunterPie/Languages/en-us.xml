@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Strings lang="English">
   <Monsters>
+    <Monster ID="ems062_03" Name="Training Dummy"/>
     <Monster ID="em001_00" Name="Rathian"/>
     <Monster ID="em001_01" Name="Pink Rathian"/>
     <Monster ID="em001_02" Name="Gold Rathian"/>
@@ -13,6 +14,7 @@
     <Monster ID="em018_00" Name="Yian Garuga"/>
     <Monster ID="em018_05" Name="Scarred Yian Garuga"/>
     <Monster ID="em023_00" Name="Rajang"/>
+    <Monster ID="em023_05" Name="Furious Rajang"/>
     <Monster ID="em024_00" Name="Kushala Daora"/>
     <Monster ID="em026_00" Name="Lunastra"/>
     <Monster ID="em027_00" Name="Teostra"/>
@@ -21,13 +23,16 @@
     <Monster ID="em036_00" Name="Lavasioth"/>
     <Monster ID="em037_00" Name="Nargacuga"/>
     <Monster ID="em042_00" Name="Barioth"/>
+    <Monster ID="em042_05" Name="Frostfang Barioth"/>
     <Monster ID="em043_00" Name="Deviljho"/>
     <Monster ID="em043_05" Name="Savage Deviljho"/>
     <Monster ID="em044_00" Name="Barroth"/>
     <Monster ID="em045_00" Name="Uragaan"/>
+    <Monster ID="em050_00" Name="Alatreon"/>
     <Monster ID="em057_00" Name="Zinogre"/>
     <Monster ID="em057_01" Name="Stygian Zinogre"/>
     <Monster ID="em063_00" Name="Brachydios"/>
+    <Monster ID="em063_05" Name="Raging Brachydios"/>
     <Monster ID="em080_00" Name="Glavenus"/>
     <Monster ID="em080_01" Name="Acidic Glavenus"/>
     <Monster ID="em100_00" Name="Anjanath"/>
@@ -77,6 +82,7 @@
     <Part ID="MONSTER_PART_LLEG" Name="Left Leg"/>
     <Part ID="MONSTER_PART_RLEG" Name="Right Leg"/>
     <Part ID="MONSTER_PART_TAIL" Name="Tail"/>
+    <Part ID="MONSTER_PART_TAIL_TIP" Name="Tail (Tip)"/>
     <Part ID="MONSTER_PART_ARMS" Name="Arms"/>
     <Part ID="MONSTER_PART_LEGS" Name="Legs"/>
     <Part ID="MONSTER_PART_LARM" Name="Left Arm"/>
@@ -99,15 +105,11 @@
     <Part ID="MONSTER_PART_FIN" Name="Fin"/>
     <Part ID="MONSTER_PART_HORNS" Name="Horns"/>
     <Part ID="MONSTER_PART_NECK" Name="Neck"/>
-    <Part ID="MONSTER_PART_LHAND" Name="Left Hand"/>
-    <Part ID="MONSTER_PART_RHAND" Name="Right Hand"/>
-    <Part ID="MONSTER_PART_LFOOT" Name="Left Foot"/>
-    <Part ID="MONSTER_PART_RFOOT" Name="Right Foot"/>
     <Part ID="MONSTER_PART_SHELL" Name="Shell"/>
-    <Part ID="MONSTER_PART_EXHAUST_ORGAN_CENTRAL" Name="Central Exhaust Organ"/>
-    <Part ID="MONSTER_PART_EXHAUST_ORGAN_HEAD" Name="Head Exhaust Organ"/>
-    <Part ID="MONSTER_PART_EXHAUST_ORGAN_CRATER" Name="Crater Exhaust Organ"/>
-    <Part ID="MONSTER_PART_EXHAUST_ORGAN_REAR" Name="Rear Exhaust Organ"/>
+    <Part ID="MONSTER_PART_EXHAUST_ORGAN_CENTRAL" Name="Central Magmacore"/>
+    <Part ID="MONSTER_PART_EXHAUST_ORGAN_HEAD" Name="Head Magmacore"/>
+    <Part ID="MONSTER_PART_EXHAUST_ORGAN_CRATER" Name="Crater Magmacore"/>
+    <Part ID="MONSTER_PART_EXHAUST_ORGAN_REAR" Name="Rear Magmacore"/>
     <Part ID="MONSTER_PART_WEAK_LSHELL" Name="Left Weak Shell"/>
     <Part ID="MONSTER_PART_WEAK_RSHELL" Name="Right Weak Shell"/>
     <Part ID="MONSTER_PART_ROCK" Name="Rock"/>
@@ -125,8 +127,6 @@
     <Part ID="MONSTER_PART_RLEG_GOLD" Name="Golden Right Leg"/>
     <Part ID="MONSTER_PART_LTAIL_GOLD" Name="Golden Left Tail"/>
     <Part ID="MONSTER_PART_RTAIL_GOLD" Name="Golden Right Tail"/>
-    <Part ID="MONSTER_PART_LHEAD" Name="Head Left"/>
-    <Part ID="MONSTER_PART_RHEAD" Name="Head Right"/>
     <Part ID="MONSTER_PART_HEAD_SNOW" Name="Snowy Head"/>
     <Part ID="MONSTER_PART_BODY_SNOW" Name="Snowy Body"/>
     <Part ID="MONSTER_PART_TAIL_SNOW" Name="Snowy Tail"/>
@@ -145,15 +145,44 @@
     <Part ID="MONSTER_PART_LARM_ROCK" Name="Rocky Left Arm"/>
     <Part ID="MONSTER_PART_RARM_ROCK" Name="Rocky Right Arm"/>
     <Part ID="MONSTER_PART_LEGS_ROCK" Name="Rocky Legs"/>
-    <Part ID="MONSTER_JAGRAS_SUMMONER" Name="Jagras Summoner"/>
+    <Part ID="MONSTER_PART_ANTLERS" Name="Antlers"/>
+    <Part ID="MONSTER_PART_HORN" Name="Horn"/>
     <!-- Removable parts -->
     <Part ID="MONSTER_PART_REMOVABLE_TAIL" Name="Removable Tail"/>
     <Part ID="MONSTER_PART_REMOVABLE_HORNS" Name="Removable Horns"/>
     <Part ID="MONSTER_PART_REMOVABLE_HEAD" Name="Breakable Head"/>
+    <Part ID="MONSTER_PART_REMOVABLE_HEAD_ROCK" Name="Breakable Head (Rocks)"/>
+    <Part ID="MONSTER_PART_REMOVABLE_CHEST_ROCK" Name="Breakable Chest (Rocks)"/>
     <Part ID="MONSTER_PART_REMOVABLE_BALLOON" Name="Removable Balloon"/>
     <Part ID="MONSTER_PART_REMOVABLE_HORNS_2" Name="Removable Horns #2"/>
-    <Part ID="MONSTER_PART_REMOVABLE_LANTLER" Name="Removable Left Antler"/>
-    <Part ID="MONSTER_PART_REMOVABLE_RANTLER" Name="Removable Right Antler"/>
+    <Part ID="MONSTER_PART_BODY_LEGS" Name="Body And Legs"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_HEAD" Name="Silver Spikes (Head)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_LARM" Name="Silver Spikes (Left Arm)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_RARM" Name="Silver Spikes (Right Arm)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_LWING" Name="Silver Spikes (Left Wing)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_RWING" Name="Silver Spikes (Right Wing)"/>
+    <!-- Special parts -->
+    <Part ID="MONSTER_PART_BIG_FLINCH" Name="Big Flinch"/>
+    <Part ID="MONSTER_PART_RAGE" Name="Removable Rage"/>
+    <Part ID="MONSTER_PART_COUNTERATTACK" Name="Counterattack"/>
+    <Part ID="MONSTER_PART_CHARGE" Name="Removable Charge"/>
+    <Part ID="MONSTER_PART_THROAT" Name="Throat"/>
+    <Part ID="MONSTER_PART_INFLATED_TAIL" Name="Inflated Tail"/>
+    <Part ID="MONSTER_PART_SKY_FALL" Name="Sky Fall"/>
+    <Part ID="MONSTER_PART_EMISSIONS" Name="Effluvia Emissions"/>
+    <Part ID="MONSTER_PART_GLOWING_HEAD" Name="Glowing Head"/>
+    <Part ID="MONSTER_PART_GLOWING_TAIL" Name="Glowing Tail"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_HEAD" Name="Emerge From Snow (Head)"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_BODY" Name="Emerge From Snow (Body)"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_TAIL" Name="Emerge From Snow (Tail)"/>
+    <Part ID="MONSTER_PART_SPIKES_HEAD" Name="Spikes (Head)"/>
+    <Part ID="MONSTER_PART_SPIKES_LARM" Name="Spikes (Left Arm)"/>
+    <Part ID="MONSTER_PART_SPIKES_RARM" Name="Spikes (Right Arm)"/>
+    <Part ID="MONSTER_PART_SPIKES_LWING" Name="Spikes (Left Wing)"/>
+    <Part ID="MONSTER_PART_SPIKES_RWING" Name="Spikes (Right Wing)"/>
+    <Part ID="MONSTER_PART_SPIKES_TAIL" Name="Spikes (Tail)"/>
+    <Part ID="MONSTER_PART_REPEL" Name="Repel"/>
+    <Part ID="MONSTER_PART_EXPLOSION_WEAKENING" Name="Explosion Weakening"/>
   </Parts>
   <Ailments>
     <Ailment ID="STATUS_UNKNOWN" Name="Unknown"/>
@@ -238,6 +267,7 @@
     <Stage ID="412" Name="Origin Isle"/>
     <Stage ID="413" Name="Origin Isle"/>
     <Stage ID="415" Name="Secluded Valley"/>
+    <Stage ID="416" Name="Secluded Valley"/>
     <Stage ID="501" Name="Living Quarters"/>
     <Stage ID="502" Name="Private Quarters"/>
     <Stage ID="503" Name="Private Suite"/>
@@ -381,15 +411,34 @@
     <Abnormality ID="MISC_024_00" Name="Hot Drink"/>
     <Abnormality ID="MISC_026_00" Name="HP Regen"/>
     <Abnormality ID="MISC_027_00" Name="Cold Res"/>
+    <Abnormality ID="MISC_030_00" Name="Snowman Head"/>
     <Abnormality ID="MISC_034_00" Name="Powercone"/>
     <Abnormality ID="MISC_035_00" Name="Ice Res (L)"/>
     <Abnormality ID="MISC_073_00" Name="Attack Up &amp; Def Up (S)"/>
+    <Abnormality ID="MISC_999_00" Name="Eat Timer"/>
+    <Abnormality ID="GEAR_000_00" Name="Demon Ammo"/>
+    <Abnormality ID="GEAR_001_00" Name="Armor Ammo"/>
+    <Abnormality ID="GEAR_002_00" Name="Fortify"/>
+    <Abnormality ID="GEAR_003_00" Name="Protective Polish"/>
+    <Abnormality ID="GEAR_004_00" Name="Affinity Sliding"/>
+    <Abnormality ID="GEAR_005_00" Name="Element Acceleration"/>
+    <Abnormality ID="GEAR_006_00" Name="Latent Power"/>
+    <Abnormality ID="GEAR_007_00" Name="Resentment"/>
+    <Abnormality ID="GEAR_008_00" Name="Adrenaline"/>
+    <Abnormality ID="GEAR_009_00" Name="Cool Cat"/>
+    <Abnormality ID="GEAR_010_00" Name="Frostcraft"/>
+    <Abnormality ID="GEAR_015_00" Name="Offensive Guard"/>
+    <Abnormality ID="GEAR_016_00" Name="Coalescence"/>
+    <Abnormality ID="GEAR_099_00" Name="Evasion Mantle (Atk)"/>
+    <Abnormality ID="GEAR_100_00" Name="Affinity Booster"/>
   </Abnormalities>
   <!-- Client localization strings -->
   <Client>
     <Console>
       <String ID="CONSOLE_CONSOLE" Name="CONSOLE"/>
       <String ID="CONSOLE_SETTINGS" Name="SETTINGS"/>
+      <String ID="CONSOLE_UPLOADBUILD" Name="UPLOAD BUILD"/>
+      <String ID="CONSOLE_EXPORTGEAR" Name="EXPORT GEAR"/>
       <String ID="CONSOLE_CHANGELOG" Name="PATCH NOTES"/>
       <String ID="CONSOLE_DISCORD" Name="DISCORD"/>
       <String ID="CONSOLE_GITHUB" Name="GITHUB"/>
@@ -399,6 +448,7 @@
       <String ID="MESSAGE_QUIT" Name="Are you sure you want to exit HunterPie?"/>
       <String ID="TITLE_MISSING_PATH" Name="Monster Hunter World Path not found"/>
       <String ID="MESSAGE_MISSING_PATH" Name="You haven't added the game path yet. Do you want to do it now?"/>
+      <String ID="MESSAGE_UPLOAD_BUILD" Name="Do you want to upload your current character build to Honey Hunters World?"/>
       <!-- Console Messages -->
       <String ID="MESSAGE_MAP_LOAD" Name="Loaded {HunterPie_Map}"/>
       <String ID="MESSAGE_DISCORD_CONNECTED" Name="Starting new RPC connection"/>
@@ -475,6 +525,10 @@
       <!-- Monster Widget -->
       <String ID="ENABLE_MONSTER_WIDGET" Name="Enable Monster Widget"/>
       <String ID="ENABLE_MONSTER_WIDGET_DESC" Name="If enabled, the monster widget will be visible whenever it has content to show."/>
+      <String ID="STATIC_MONSTER_HEALTH_STRING_FORMAT" Name="Health text format:"/>
+      <String ID="STATIC_MONSTER_HEALTH_STRING_FORMAT_DESC" Name="Text format for the monster health bar."/>
+      <String ID="ENABLE_MONSTER_USE_LOCKON" Name="Use lockon instead of map pin to target monster"/>
+      <String ID="ENABLE_MONSTER_USE_LOCKON_DESC" Name="If enabled, HunterPie will use the in-game monster lockon to select your target."/>
       <String ID="STATIC_MONSTER_BAR_MODE" Name="Monster Bar Mode"/>
       <String ID="STATIC_MONSTER_BAR_MODE_DESC" Name="Changes the monster bar mode."/>
       <String ID="STATIC_MONSTER_BAR_MODE_0" Name="Show all monsters at once"/>
@@ -537,11 +591,23 @@
       <String ID="ENABLE_HARVEST_BOX_EVERYWHERE" Name="Show Harvest Box everywhere"/>
       <String ID="ENABLE_HARVEST_BOX_EVERYWHERE_DESC" Name="If enabled, this widget will be displayed in every place, including expeditions, Guiding Lands and any other monster zones."/>
       <String ID="STATIC_HARVEST_BOX_POSITION_DESC" Name="Changes the Harvest Box widget position."/>
+      <String ID="ENABLE_HARVEST_BOX_COMPACT_MODE" Name="Enable compact mode"/>
+      <String ID="ENABLE_HARVEST_BOX_COMPACT_MODE_DESC" Name="If enabled, the Harvest Box Widget will use it's compact design."/>
       <!-- Damage Meter -->
       <String ID="ENABLE_METER" Name="Enable Damage Widget"/>
       <String ID="ENABLE_METER_DESC" Name="If enabled, the Damage Meter Widget will be visible whenever it has content."/>
-      <String ID="ENABLE_METER_DPS" Name="Show DPS instead of total damage"/>
-      <String ID="ENABLE_METER_DPS_DESC" Name="If enabled, the Damage Meter will show damage per second instead of total damage."/>
+      <String ID="ENABLE_TIMER" Name="Show timer"/>
+      <String ID="ENABLE_TIMER_DESC" Name="If enabled, the Damage Meter timer will be visible."/>
+      <String ID="ENABLE_TOTAL_DAMAGE" Name="Show total damage"/>
+      <String ID="ENABLE_TOTAL_DAMAGE_DESC" Name="If enabled, the Damage Widget will show individual total damage."/>
+      <String ID="ENABLE_METER_DPS" Name="Show damage per second"/>
+      <String ID="ENABLE_METER_DPS_DESC" Name="If enabled, the Damage Widget will show individual damage per second."/>
+      <String ID="ENABLE_TIMER_IN_GL" Name="Enable timer in Expeditions/Guiding Lands"/>
+      <String ID="ENABLE_TIMER_IN_GL_DESC" Name="If enabled, the timer will be visible in Expeditions/Guiding Lands."/>
+      <String ID="ENABLE_ONLY_TIMER" Name="Show only timer"/>
+      <String ID="ENABLE_ONLY_TIMER_DESC" Name="If enabled, the Damage Widget will only show the timer, hiding the party members damage."/>
+      <String ID="ENABLE_METER_ONLY_MYSELF" Name="Show only my damage"/>
+      <String ID="ENABLE_METER_ONLY_MYSELF_DESC" Name="If enabled, only your damage will be visible."/>
       <String ID="STATIC_METER_PLAYER_1" Name="First Player"/>
       <String ID="STATIC_METER_PLAYER_2" Name="Second Player"/>
       <String ID="STATIC_METER_PLAYER_3" Name="Third Player"/>
@@ -561,6 +627,7 @@
       <String ID="STATIC_ABNORM_TAB_HH" Name="Hunting Horn"/>
       <String ID="STATIC_ABNORM_TAB_ORCHESTRA" Name="Orchestra"/>
       <String ID="STATIC_ABNORM_TAB_DEBUFF" Name="Debuffs"/>
+      <String ID="STATIC_ABNORM_TAB_GEAR" Name="Gear"/>
       <String ID="STATIC_ABNORM_TAB_CONSUMABLE" Name="Consumables"/>
       <String ID="ENABLE_SHOW_ABNORM_NAMES" Name="Show abnormality name"/>
       <String ID="ENABLE_SHOW_ABNORM_NAMES_DESC" Name="If enabled, abnormality names will be visible."/>
@@ -574,6 +641,26 @@
       <String ID="STATIC_COLOR" Name="Color:"/>
       <String ID="STATIC_PRIMARY_SPEC_TOOL_POSITION_DESC" Name="Changes the primary specialized tool widget position."/>
       <String ID="STATIC_SECONDARY_SPEC_TOOL_POSITION_DESC" Name="Changes the secondary specialized tool widget position."/>
+      <!-- Class Widget -->
+      <String ID="ENABLE_INSECT_GLAIVE_HELPER" Name="Enable Insect Glaive Helper"/>
+      <String ID="ENABLE_INSECT_GLAIVE_HELPER_DESC" Name="If enabled, the Insect Glaive helper will be visible whenever you equip an Insect Glaive."/>
+      <String ID="ENABLE_CHARGE_BLADE_HELPER" Name="Enable Charge Blade Helper"/>
+      <String ID="ENABLE_CHARGE_BLADE_HELPER_DESC" Name="If enabled, the Charge Blade helper will be visible whenever you equip an Charge Blade."/>
+      <String ID="ENABLE_SWITCH_AXE_HELPER" Name="Enable Switch Axe Helper"/>
+      <String ID="ENABLE_SWITCH_AXE_HELPER_DESC" Name="If enabled, the Switch Axe helper will be visible whenever you equip an Switch Axe."/>
+      <String ID="ENABLE_GUN_LANCE_HELPER" Name="Enable Gun Lance Helper"/>
+      <String ID="ENABLE_GUN_LANCE_HELPER_DESC" Name="If enabled, the Gun Lance helper will be visible whenever you equip an Gun Lance."/>
+      <String ID="ENABLE_LONGSWORD_HELPER" Name="Enable Longsword Helper"/>
+      <String ID="ENABLE_LONGSWORD_HELPER_DESC" Name="If enabled, the Longsword helper will be visible whenever you equip an Longsword."/>
+      <String ID="ENABLE_BOW_HELPER" Name="Enable Bow Helper"/>
+      <String ID="ENABLE_BOW_HELPER_DESC" Name="If enabled, the Bow helper will be visible whenever you equip an Bow."/>
+      <String ID="ENABLE_HAMMER_HELPER" Name="Enable Hammer Helper"/>
+      <String ID="ENABLE_HAMMER_HELPER_DESC" Name="If enabled, the Hammer helper will be visible whenever you equip an Hammer."/>
+      <String ID="ENABLE_DUALBLADES_HELPER" Name="Enable Dual Blades Helper"/>
+      <String ID="ENABLE_DUALBLADES_HELPER_DESC" Name="If enabled, the Dual Blades helper will be visible whenever you equip Dual Blades."/>
+      <String ID="ENABLE_LANCE_HELPER" Name="Enable Lance Helper"/>
+      <String ID="ENABLE_LANCE_HELPER_DESC" Name="If enabled, the Lance helper will be visible whenever you equip Lance."/>
+      <String ID="STATIC_CLASSES_BETA_WARNING" Name="Attention: Class helpers are still in development and more classes will be supported in the future. Each class helper has it's own settings, so you can have different positions for this widget depending on the class. Use the Design Mode feature to scale and move this widget."/>
       <!-- Links -->
       <String ID="STATIC_HUNTERPIE_WIKI" Name="Documentation"/>
       <String ID="STATIC_HUNTERPIE_WIKI_DESC" Name="HunterPie official documentation."/>
@@ -599,6 +686,8 @@
       <String ID="STATIC_BUTTON_SAVE" Name="Save"/>
       <String ID="STATIC_REQUIRES_RESTART" Name="(Requires restart)"/>
       <String ID="STATIC_POSITION" Name="Position"/>
+      <String ID="STATIC_COPYCLIPBOARD" Name="Copy to clipboard"/>
+      <String ID="STATIC_OPACITY" Name="Opacity"/>
       <!-- Settings Side bar-->
       <String ID="STATIC_GENERAL_SETTINGS" Name="General"/>
       <String ID="STATIC_DISCORD_SETTINGS" Name="Discord"/>
@@ -608,6 +697,7 @@
       <String ID="STATIC_DAMAGE_METER_SETTINGS" Name="DPS Meter"/>
       <String ID="STATIC_ABNORM_BAR_SETTINGS" Name="Buff Bar"/>
       <String ID="STATIC_SPECIALIZED_TOOLS_SETTINGS" Name="Specialized Tools"/>
+      <String ID="STATIC_CLASSES_SETTINGS" Name="Classes"/>
       <String ID="STATIC_LINKS_SETTINGS" Name="Links"/>
       <String ID="STATIC_DEBUG_SETTINGS" Name="Debug"/>
     </Settings>
@@ -619,6 +709,10 @@
       <String ID="STATIC_ACCEPT" Name="Accept"/>
       <String ID="STATIC_REJECT" Name="Reject"/>
       <String ID="STATIC_SETTINGS_LOAD" Name="Settings loaded"/>
+      <String ID="STATIC_OPENDEFAULTBROWSER" Name="Open in Browser"/>
+      <String ID="STATIC_OPENFOLDER" Name="Open Folder"/>
+      <String ID="MESSAGE_BUILD_UPLOADED" Name="Build uploaded to Honey Hunters World!"/>
+      <String ID="MESSAGE_GEAR_EXPORTED" Name="Exported gear to ./DataExport!"/>
     </Notifications>
     <RichPresence>
       <String ID="RPC_DESCRIPTION_IN_MAIN_MENU" Name="In Main Menu"/>

@@ -1,6 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Strings lang="Русский">
   <Monsters>
+    <Monster ID="ems062_03" Name="Тренировочный манекен"/>
     <Monster ID="em001_00" Name="Ратиана"/>
     <Monster ID="em001_01" Name="Розовая Ратиана"/>
     <Monster ID="em001_02" Name="Золотая Ратиана"/>
@@ -13,6 +14,7 @@
     <Monster ID="em018_00" Name="Йан-Гаруга"/>
     <Monster ID="em018_05" Name="Матёрый Йан-Гаруга"/>
     <Monster ID="em023_00" Name="Раянг"/>
+    <Monster ID="em023_05" Name="Взбешённый Раянг"/>
     <Monster ID="em024_00" Name="Кушала-Даора"/>
     <Monster ID="em026_00" Name="Лунастра"/>
     <Monster ID="em027_00" Name="Теостра"/>
@@ -21,13 +23,16 @@
     <Monster ID="em036_00" Name="Лавасиот"/>
     <Monster ID="em037_00" Name="Наргакуга"/>
     <Monster ID="em042_00" Name="Бариот"/>
+    <Monster ID="em042_05" Name="Ледозубый Бариот"/>
     <Monster ID="em043_00" Name="Девильо"/>
     <Monster ID="em043_05" Name="Лютый Девильо"/>
     <Monster ID="em044_00" Name="Баррот"/>
     <Monster ID="em045_00" Name="Урагаан"/>
+    <Monster ID="em050_00" Name="Алатреон"/>
     <Monster ID="em057_00" Name="Зиногр"/>
     <Monster ID="em057_01" Name="Стигийский Зиногр"/>
     <Monster ID="em063_00" Name="Брахидиос"/>
+    <Monster ID="em063_05" Name="Неистовый Брахидиос"/>
     <Monster ID="em080_00" Name="Главенус"/>
     <Monster ID="em080_01" Name="Кислотный Главенус"/>
     <Monster ID="em100_00" Name="Аньянат"/>
@@ -77,6 +82,7 @@
     <Part ID="MONSTER_PART_LLEG" Name="Левая Нога"/>
     <Part ID="MONSTER_PART_RLEG" Name="Правая Нога"/>
     <Part ID="MONSTER_PART_TAIL" Name="Хвост"/>
+    <Part ID="MONSTER_PART_TAIL_TIP" Name="Хвост (Кончик)"/>
     <Part ID="MONSTER_PART_ARMS" Name="Лапы"/>
     <Part ID="MONSTER_PART_LEGS" Name="Ноги"/>
     <Part ID="MONSTER_PART_LARM" Name="Левая Лапа"/>
@@ -99,10 +105,6 @@
     <Part ID="MONSTER_PART_FIN" Name="Плавник"/>
     <Part ID="MONSTER_PART_HORNS" Name="Рога"/>
     <Part ID="MONSTER_PART_NECK" Name="Шея"/>
-    <Part ID="MONSTER_PART_LHAND" Name="Левая Лапа"/>
-    <Part ID="MONSTER_PART_RHAND" Name="Правая Лапа"/>
-    <Part ID="MONSTER_PART_LFOOT" Name="Левая Нога"/>
-    <Part ID="MONSTER_PART_RFOOT" Name="Правая Нога"/>
     <Part ID="MONSTER_PART_SHELL" Name="Панцирь"/>
     <Part ID="MONSTER_PART_EXHAUST_ORGAN_CENTRAL" Name="Центральное Ядро Магмы"/>
     <Part ID="MONSTER_PART_EXHAUST_ORGAN_HEAD" Name="Головное Ядро Магмы"/>
@@ -125,8 +127,6 @@
     <Part ID="MONSTER_PART_RLEG_GOLD" Name="Золотая Правая Нога"/>
     <Part ID="MONSTER_PART_LTAIL_GOLD" Name="Золотой Левый Хвост"/>
     <Part ID="MONSTER_PART_RTAIL_GOLD" Name="Золотой Правый Хвост"/>
-    <Part ID="MONSTER_PART_LHEAD" Name="Голова Слева"/>
-    <Part ID="MONSTER_PART_RHEAD" Name="Голова Справа"/>
     <Part ID="MONSTER_PART_HEAD_SNOW" Name="Снежная Голова"/>
     <Part ID="MONSTER_PART_BODY_SNOW" Name="Снежное Тело"/>
     <Part ID="MONSTER_PART_TAIL_SNOW" Name="Снежный Хвост"/>
@@ -145,15 +145,44 @@
     <Part ID="MONSTER_PART_LARM_ROCK" Name="Каменная Левая Лапа"/>
     <Part ID="MONSTER_PART_RARM_ROCK" Name="Каменная Правая Лапа"/>
     <Part ID="MONSTER_PART_LEGS_ROCK" Name="Каменные Ноги"/>
-    <Part ID="MONSTER_JAGRAS_SUMMONER" Name="Призыватель Яграсов"/>
+    <Part ID="MONSTER_PART_ANTLERS" Name="Рога"/>
+    <Part ID="MONSTER_PART_HORN" Name="Рог"/>
     <!-- Removable parts -->
     <Part ID="MONSTER_PART_REMOVABLE_TAIL" Name="Отделяемый Хвост"/>
     <Part ID="MONSTER_PART_REMOVABLE_HORNS" Name="Непрочные Рога"/>
     <Part ID="MONSTER_PART_REMOVABLE_HEAD" Name="Непрочная Голова"/>
+    <Part ID="MONSTER_PART_REMOVABLE_HEAD_ROCK" Name="Непрочная Голова (Камни)"/>
+    <Part ID="MONSTER_PART_REMOVABLE_CHEST_ROCK" Name="Непрочная Грудь (Камни)"/>
     <Part ID="MONSTER_PART_REMOVABLE_BALLOON" Name="Непрочный Пузырь"/>
     <Part ID="MONSTER_PART_REMOVABLE_HORNS_2" Name="Непрочные Рога #2"/>
-    <Part ID="MONSTER_PART_REMOVABLE_LANTLER" Name="Непрочный Левый Рог"/>
-    <Part ID="MONSTER_PART_REMOVABLE_RANTLER" Name="Непрочный Правый Рог"/>
+    <Part ID="MONSTER_PART_BODY_LEGS" Name="Тело и Лапы"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_HEAD" Name="Серебрянные шипы (Голова)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_LARM" Name="Серебрянные шипы (Левая лапа)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_RARM" Name="Серебрянные шипы (Правая лапа)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_LWING" Name="Серебрянные шипы (Левое крыло)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_RWING" Name="Серебрянные шипы (Правое крыло)"/>
+    <!-- Special parts -->
+    <Part ID="MONSTER_PART_BIG_FLINCH" Name="Большой флинч"/>
+    <Part ID="MONSTER_PART_RAGE" Name="Сброс ярости"/>
+    <Part ID="MONSTER_PART_COUNTERATTACK" Name="Контратака"/>
+    <Part ID="MONSTER_PART_CHARGE" Name="Сброс заряда"/>
+    <Part ID="MONSTER_PART_THROAT" Name="Горло"/>
+    <Part ID="MONSTER_PART_INFLATED_TAIL" Name="Раздутый хвост"/>
+    <Part ID="MONSTER_PART_SKY_FALL" Name="Пикирование"/>
+    <Part ID="MONSTER_PART_EMISSIONS" Name="Выбросы миазмов"/>
+    <Part ID="MONSTER_PART_GLOWING_HEAD" Name="Сияющая голова"/>
+    <Part ID="MONSTER_PART_GLOWING_TAIL" Name="Сияющий хвост"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_HEAD" Name="Выход из снега (Голова)"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_BODY" Name="Выход из снега (Тело)"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_TAIL" Name="Выход из снега (Хвост)"/>
+    <Part ID="MONSTER_PART_SPIKES_HEAD" Name="Шипы (Голова)"/>
+    <Part ID="MONSTER_PART_SPIKES_LARM" Name="Шипы (Левая лапа)"/>
+    <Part ID="MONSTER_PART_SPIKES_RARM" Name="Шипы (Правая лапа)"/>
+    <Part ID="MONSTER_PART_SPIKES_LWING" Name="Шипы (Левое крыло)"/>
+    <Part ID="MONSTER_PART_SPIKES_RWING" Name="Шипы (Правое крыло)"/>
+    <Part ID="MONSTER_PART_SPIKES_TAIL" Name="Шипы (Хвост)"/>
+    <Part ID="MONSTER_PART_REPEL" Name="Щиток"/>
+
   </Parts>
   <Ailments>
     <Ailment ID="STATUS_UNKNOWN" Name="Неизвестно"/>
@@ -170,8 +199,8 @@
     <Ailment ID="STATUS_DUNGPOD" Name="Навоз"/>
     <Ailment ID="STATUS_SHOCKTRAP" Name="Шоковая Ловушка"/>
     <Ailment ID="STATUS_PITFALLTRAP" Name="Волчья Яма"/>
-    <Ailment ID="STATUS_ELDERSEAL" Name="Печать Древнего"/>
     <Ailment ID="STATUS_VINETRAP" Name="Лоза"/>
+    <Ailment ID="STATUS_ELDERSEAL" Name="Печать Древнего"/>
     <Ailment ID="STATUS_SMOKING" Name="Дымовая завеса"/>
     <Ailment ID="STATUS_FELYNETRAP" Name="Кошачья Ловушка"/>
     <Ailment ID="STATUS_CLAW" Name="Коготь"/>
@@ -238,6 +267,7 @@
     <Stage ID="412" Name="Остров Истоков"/>
     <Stage ID="413" Name="Остров Истоков"/>
     <Stage ID="415" Name="Уединённая Долина"/>
+    <Stage ID="416" Name="Уединённая Долина"/>
     <Stage ID="501" Name="Жилые Квартиры"/>
     <Stage ID="502" Name="Частные Квартиры"/>
     <Stage ID="503" Name="Частная Квартира"/>
@@ -381,15 +411,34 @@
     <Abnormality ID="MISC_024_00" Name="Горячий Напиток"/>
     <Abnormality ID="MISC_026_00" Name="Регенерация ХП"/>
     <Abnormality ID="MISC_027_00" Name="Сопр Холоду"/>
+    <Abnormality ID="MISC_030_00" Name="Голова снеговика"/>
     <Abnormality ID="MISC_034_00" Name="Конус Силы"/>
     <Abnormality ID="MISC_035_00" Name="Сопр Льду (L)"/>
     <Abnormality ID="MISC_073_00" Name="Усил Атаки &amp; Усил Защиты (S)"/>
+    <Abnormality ID="MISC_999_00" Name="Таймер еды"/>
+    <Abnormality ID="GEAR_000_00" Name="Демонический снаряд"/>
+    <Abnormality ID="GEAR_001_00" Name="Защитный снаряд"/>
+    <Abnormality ID="GEAR_002_00" Name="Укрепление"/>
+    <Abnormality ID="GEAR_003_00" Name="Защитная полировка"/>
+    <Abnormality ID="GEAR_004_00" Name="Мастерский подкат"/>
+    <Abnormality ID="GEAR_005_00" Name="Ускорение стихии"/>
+    <Abnormality ID="GEAR_006_00" Name="Скрытая сила"/>
+    <Abnormality ID="GEAR_007_00" Name="Провокация"/>
+    <Abnormality ID="GEAR_008_00" Name="Адреналин"/>
+    <Abnormality ID="GEAR_009_00" Name="Классный кот"/>
+    <Abnormality ID="GEAR_010_00" Name="Мастерство мороза"/>
+    <Abnormality ID="GEAR_015_00" Name="Агрессивная защита"/>
+    <Abnormality ID="GEAR_016_00" Name="Сращивание"/>
+    <Abnormality ID="GEAR_099_00" Name="Покров Уклонения (Атк)"/>
+    <Abnormality ID="GEAR_100_00" Name="Усилитель Мастерства"/>
   </Abnormalities>
   <!-- Client localization strings -->
   <Client>
     <Console>
       <String ID="CONSOLE_CONSOLE" Name="КОНСОЛЬ"/>
       <String ID="CONSOLE_SETTINGS" Name="НАСТРОЙКИ"/>
+      <String ID="CONSOLE_UPLOADBUILD" Name="ЗАГРУЗИТЬ БИЛД"/>
+      <String ID="CONSOLE_EXPORTGEAR" Name="ЭКСПОРТ БИЛДА"/>
       <String ID="CONSOLE_CHANGELOG" Name="ПАТЧНОУТЫ"/>
       <String ID="CONSOLE_DISCORD" Name="ДИСКОРД"/>
       <String ID="CONSOLE_GITHUB" Name="ГИТХАБ"/>
@@ -399,6 +448,7 @@
       <String ID="MESSAGE_QUIT" Name="Вы уверены что хотите закрыть HunterPie?"/>
       <String ID="TITLE_MISSING_PATH" Name="Путь к Monster Hunter World не найден."/>
       <String ID="MESSAGE_MISSING_PATH" Name="Вы не указали путь к игре. Хотите сделать это сейчас?"/>
+      <String ID="MESSAGE_UPLOAD_BUILD" Name="Вы хотите загрузить свой текущий набор снаряжения персонажа в Honey Hunters World?"/>
       <!-- Console Messages -->
       <String ID="MESSAGE_MAP_LOAD" Name="Загружено {HunterPie_Map}"/>
       <String ID="MESSAGE_DISCORD_CONNECTED" Name="Установление нового соединения RPC"/>
@@ -437,12 +487,12 @@
       <String ID="ENABLE_AUTOCLOSE_DESC" Name="Если включено, HunterPie будет автоматически закрываться при выходе из игры."/>
       <String ID="STATIC_UPDATEBRANCH" Name="Ветвь обновления:"/>
       <String ID="STATIC_UPDATEBRANCH_DESC" Name="Выберите ветвь для обновления HunterPie. BETA имеет свежайшие нововведения, master наиболее стабильна."/>
-      <String ID="STATIC_LANGUAGEFILE" Name="Язык File:"/>
+      <String ID="STATIC_LANGUAGEFILE" Name="Языковой файл:"/>
       <String ID="STATIC_LANGUAGEFILE_DESC" Name="Выберите языковой файл HunterPie."/>
-      <String ID="STATIC_THEMEFILE" Name="Тема File:"/>
+      <String ID="STATIC_THEMEFILE" Name="Файл темы:"/>
       <String ID="STATIC_THEMEFILE_DESC" Name="Выберите файл темы HunterPie."/>
       <String ID="STATIC_GAMEPATH" Name="Путь к игре:"/>
-      <String ID="STATIC_GAMEPATH_UNSELECTED" Name="Выберьте путь"/>
+      <String ID="STATIC_GAMEPATH_UNSELECTED" Name="Выберите путь"/>
       <String ID="STATIC_GAMEPATH_DESC" Name="Укажите путь к исполняемому файлу Monster Hunter World."/>
       <String ID="STATIC_LAUNCHARGS" Name="Аргументы запуска"/>
       <String ID="STATIC_LAUNCHARGS_NOARGS" Name="Нет аргументов"/>
@@ -452,7 +502,7 @@
       <String ID="ENABLE_RPC_DESC" Name="Если включено, HunterPie будет показывать вашу игровую активность в статусе Дискорда."/>
       <String ID="ENABLE_RPC_HEALTH" Name="Показывать проценты жизни монстров"/>
       <String ID="ENABLE_RPC_HEALTH_DESC" Name="Если включено, HunterPie будет показывать проценты жизни монстров."/>
-      <String ID="ENABLE_PEOPLE_JOIN" Name="Разрешить людям запрашивать присоединение к моей онлайн сессии"/>
+      <String ID="ENABLE_PEOPLE_JOIN" Name="Разрешить запрашивать присоединение к моей онлайн сессии"/>
       <String ID="ENABLE_PEOPLE_JOIN_DESC" Name="Если включено, люди смогут запрашивать присоединение к моей онлайн сессии в Monster Hunter World."/>
       <!-- Overlay -->
       <String ID="ENABLE_OVERLAY" Name="Включить игровой оверлей"/>
@@ -469,19 +519,24 @@
       <String ID="STATIC_IMAGE_QUALITY_DESC" Name="Изменяет качество изображений."/>
       <String ID="STATIC_TOGGLE_OVERLAY" Name="Переключить оверлей (Горячая клавиша):"/>
       <String ID="STATIC_TOGGLE_OVERLAY_DESC" Name="Горячая клавиша для скрытия оверлея. Изменение горячей клавиши требует перезапуска для вступления в силу."/>
-      <String ID="STATIC_TOGGLE_DESIGN" Name="Переключить режим дизайна (Горячая клавиша):"/>
-      <String ID="STATIC_TOGGLE_DESIGN_DESC" Name="Горячая клавиша для переключения режима дизайна."/>
+      <String ID="STATIC_TOGGLE_DESIGN" Name="Включить режим дизайна (Горячая клавиша):"/>
+      <String ID="STATIC_TOGGLE_DESIGN_DESC" Name="Выбор горячей клавиши для включения режима перемещения и настройки размера виджетов. "/>
       <String ID="STATIC_OVERLAY_POSITION_DESC" Name="Изменяет положение оверлея."/>
       <!-- Monster Widget -->
       <String ID="ENABLE_MONSTER_WIDGET" Name="Включить виджет Монстра"/>
       <String ID="ENABLE_MONSTER_WIDGET_DESC" Name="Если включено, виджет Монстра будет виден всякий раз, когда у него есть что показать."/>
+      <String ID="STATIC_MONSTER_HEALTH_STRING_FORMAT" Name="Формат здоровья:"/>
+      <String ID="STATIC_MONSTER_HEALTH_STRING_FORMAT_DESC" Name="Текстовый формат для панели здоровья монстра."/>
+      <String ID="ENABLE_MONSTER_USE_LOCKON" Name="Используйте блокировку вместо отметки на карте, чтобы назначить монстра"/>
+      <String ID="ENABLE_MONSTER_USE_LOCKON_DESC" Name="Если включено, HunterPie будет использовать выбранного заданием монстра в игре для выбора цели."/>
       <String ID="STATIC_MONSTER_BAR_MODE" Name="Режим виджета Монстра"/>
       <String ID="STATIC_MONSTER_BAR_MODE_DESC" Name="Изменяет режим виджета монстров."/>
       <String ID="STATIC_MONSTER_BAR_MODE_0" Name="Показать всех монстров одновременно"/>
       <String ID="STATIC_MONSTER_BAR_MODE_1" Name="Показать всех монстров, но выделить мою цель"/>
       <String ID="STATIC_MONSTER_BAR_MODE_2" Name="Показать только мою цель"/>
       <String ID="STATIC_MONSTER_BAR_MODE_3" Name="Показать всех, но скрывать неактивных монстров через 15 секунд"/>
-      <String ID="STATIC_MONSTER_BAR_MODE_HOTKEY" Name="Изменить режим виджета монстров (Горячая клавиша):"/>
+      <String ID="STATIC_MONSTER_BAR_MODE_4" Name="Показывать всех пока цель не выбрана"/>
+      <String ID="STATIC_MONSTER_BAR_MODE_HOTKEY" Name="Изменить режим виджета (Горячая клавиша):"/>
       <String ID="STATIC_MONSTER_BAR_MODE_HOTKEY_DESC" Name="Горячая клавиша для изменения режима виджета монстров. Изменение горячей клавиши требует перезапуска для вступления в силу."/>
       <String ID="STATIC_MONSTER_BAR_DOCK" Name="Положение панели Монстра:"/>
       <String ID="STATIC_MONSTER_BAR_DOCK_DESC" Name="Смена положения индикатора здоровья Монстра над или под частями/недомоганиями."/>
@@ -536,11 +591,23 @@
       <String ID="ENABLE_HARVEST_BOX_EVERYWHERE" Name="Показывать Ящик урожая везде"/>
       <String ID="ENABLE_HARVEST_BOX_EVERYWHERE_DESC" Name="Если включено, этот виджет будет отображаться в любом месте, включая экспедиции, Путеводные Земли и любые другие зоны монстров."/>
       <String ID="STATIC_HARVEST_BOX_POSITION_DESC" Name="Изменяет положение виджета «Ящик урожая»."/>
+      <String ID="ENABLE_HARVEST_BOX_COMPACT_MODE" Name="Включить компактный режим"/>
+      <String ID="ENABLE_HARVEST_BOX_COMPACT_MODE_DESC" Name="Если включено, виджет Ящик урожая будет отображаться в компактном режиме."/>
       <!-- Damage Meter -->
       <String ID="ENABLE_METER" Name="Показывать Счётчик Урона"/>
       <String ID="ENABLE_METER_DESC" Name="Если включено, виджет Счётчик Урона будет виден, когда у него есть контент."/>
+      <String ID="ENABLE_TIMER" Name="Показать таймер"/>
+      <String ID="ENABLE_TIMER_DESC" Name="Если включено, таймер Счётчика Урона будет виден."/>
+      <String ID="ENABLE_TOTAL_DAMAGE" Name="Показать общий урон"/>
+      <String ID="ENABLE_TOTAL_DAMAGE_DESC" Name="Если включено, виджет урона будет показывать индивидуальный общий урон."/>
       <String ID="ENABLE_METER_DPS" Name="Показывать ДПС вместо общего урона"/>
       <String ID="ENABLE_METER_DPS_DESC" Name="Если включено, Счётчик Урона будет показывать урон в секунду вместо общего урона."/>
+      <String ID="ENABLE_TIMER_IN_GL" Name="Включить таймер в экспедициях/путеводных землях"/>
+      <String ID="ENABLE_TIMER_IN_GL_DESC" Name="Если включено, таймер будет виден в экспедициях/путеводных землях."/>
+      <String ID="ENABLE_ONLY_TIMER" Name="Показать только таймер"/>
+      <String ID="ENABLE_ONLY_TIMER_DESC" Name="Если включено, виджет урона будет показывать только таймер, скрывая урон членов группы."/>
+      <String ID="ENABLE_METER_ONLY_MYSELF" Name="Показать только мой урон"/>
+      <String ID="ENABLE_METER_ONLY_MYSELF_DESC" Name="Если включено, будет виден только ваш урон."/>
       <String ID="STATIC_METER_PLAYER_1" Name="Первый игрок"/>
       <String ID="STATIC_METER_PLAYER_2" Name="Второй игрок"/>
       <String ID="STATIC_METER_PLAYER_3" Name="Третий игрок"/>
@@ -560,7 +627,10 @@
       <String ID="STATIC_ABNORM_TAB_HH" Name="Охотничий рог"/>
       <String ID="STATIC_ABNORM_TAB_ORCHESTRA" Name="Коралловый оркестр"/>
       <String ID="STATIC_ABNORM_TAB_DEBUFF" Name="Дебаффы"/>
+      <String ID="STATIC_ABNORM_TAB_GEAR" Name="Снаряжение"/>
       <String ID="STATIC_ABNORM_TAB_CONSUMABLE" Name="Предметы"/>
+      <String ID="ENABLE_SHOW_ABNORM_NAMES" Name="Показывать название статуса"/>
+      <String ID="ENABLE_SHOW_ABNORM_NAMES_DESC" Name="Если включено, имена статусов будут видны."/>
       <!-- Specialized Tool Widget-->
       <String ID="STATIC_PRIMARY_SPEC_TOOL" Name="Основной специальный инструмент"/>
       <String ID="STATIC_SECONDARY_SPEC_TOOL" Name="Вторичный специальный инструмент"/>
@@ -571,6 +641,26 @@
       <String ID="STATIC_COLOR" Name="Цвет:"/>
       <String ID="STATIC_PRIMARY_SPEC_TOOL_POSITION_DESC" Name="Изменяет положение виджета основного специального инструмента."/>
       <String ID="STATIC_SECONDARY_SPEC_TOOL_POSITION_DESC" Name="Изменяет положение виджета вторичного специального инструмента."/>
+      <!-- Class Widget -->
+      <String ID="ENABLE_INSECT_GLAIVE_HELPER" Name="Включить помощника Глефы Насекомых"/>
+      <String ID="ENABLE_INSECT_GLAIVE_HELPER_DESC" Name="Если включено, помощник Глефы Насекомых будет виден при использовании Глефы Насекомых."/>
+      <String ID="ENABLE_CHARGE_BLADE_HELPER" Name="Включить помощника Силового Клинка"/>
+      <String ID="ENABLE_CHARGE_BLADE_HELPER_DESC" Name="Если включено, помощник Силового Клинка будет виден при использовании Силового Клинка."/>
+      <String ID="ENABLE_SWITCH_AXE_HELPER" Name="Включить помощника Выкидного Топора"/>
+      <String ID="ENABLE_SWITCH_AXE_HELPER_DESC" Name="Если включено, помощник Выкидного Топора будет виден при использовании Выкидного Топора."/>
+      <String ID="ENABLE_GUN_LANCE_HELPER" Name="Включить помощника Копьепушки"/>
+      <String ID="ENABLE_GUN_LANCE_HELPER_DESC" Name="Если включено, помощник Копьепушки будет виден при использовании Копьепушки."/>
+      <String ID="ENABLE_LONGSWORD_HELPER" Name="Включить помощника Длинного Меча"/>
+      <String ID="ENABLE_LONGSWORD_HELPER_DESC" Name="Если включено, помощник Длинного Меча будет виден при использовании Длинного Меча."/>
+      <String ID="ENABLE_BOW_HELPER" Name="Включить помощника Лука"/>
+      <String ID="ENABLE_BOW_HELPER_DESC" Name="Если включено, помощник Лука будет виден при использовании Лука."/>
+      <String ID="ENABLE_HAMMER_HELPER" Name="Включить помощника Молота"/>
+      <String ID="ENABLE_HAMMER_HELPER_DESC" Name="Если включено, помощник Молота будет виден при использовании Молота."/>
+      <String ID="ENABLE_DUALBLADES_HELPER" Name="Включить помощника Двойных Клинков"/>
+      <String ID="ENABLE_DUALBLADES_HELPER_DESC" Name="Если включено, помощник Двойных Клинков будет виден при использовании Двойных Клинков."/>
+      <String ID="ENABLE_LANCE_HELPER" Name="Включить помощника Копья"/>
+      <String ID="ENABLE_LANCE_HELPER_DESC" Name="Если включено, помощник Копья будет виден при использовании Копья."/>
+      <String ID="STATIC_CLASSES_BETA_WARNING" Name="Внимание: помощники класса все еще находятся в разработке, и в будущем будет поддерживаться больше классов. Каждый помощник класса имеет свои собственные настройки, поэтому вы можете иметь разные позиции для этого виджета в зависимости от класса. Используйте функцию «Режим дизайна» для масштабирования и перемещения этого виджета."/>
       <!-- Links -->
       <String ID="STATIC_HUNTERPIE_WIKI" Name="Документация"/>
       <String ID="STATIC_HUNTERPIE_WIKI_DESC" Name="Официальная документация HunterPie."/>
@@ -588,7 +678,7 @@
       <String ID="ENABLE_UNKNOWN_AILMENTS_DESC" Name="Включает неизвестные статусы монстров. Не включайте эту опцию, если вы не знаете, что делаете. Это часть инструментов разработки."/>
       <String ID="ENABLE_LOAD_CUSTOM_DATA" Name="Загрузить пользовательские данные монстра"/>
       <String ID="ENABLE_LOAD_CUSTOM_DATA_DESC" Name="Если включено, HunterPie будет пытаться загрузить пользовательский файл данных монстра. Не включайте эту опцию, если вы не знаете, что делаете. Это часть инструментов разработки."/>
-      <String ID="STATIC_LOAD_CUSTOM_DATA_PATH" Name="Пользовательские данные монстра File:"/>
+      <String ID="STATIC_LOAD_CUSTOM_DATA_PATH" Name="Пользовательские данные монстра Файл:"/>
       <String ID="STATIC_LOAD_CUSTOM_DATA_PATH_DESC" Name="Выберите путь к собственному файлу данных монстра."/>
       <!-- Generics -->
       <String ID="STATIC_BUTTON_SELECT_ALL" Name="Включить всё"/>
@@ -596,6 +686,8 @@
       <String ID="STATIC_BUTTON_SAVE" Name="Сохранить"/>
       <String ID="STATIC_REQUIRES_RESTART" Name="(Требует перезапуска)"/>
       <String ID="STATIC_POSITION" Name="Позиция"/>
+      <String ID="STATIC_COPYCLIPBOARD" Name="Скопировать в буфер обмена"/>
+      <String ID="STATIC_OPACITY" Name="Прозрачность"/>
       <!-- Settings Side bar-->
       <String ID="STATIC_GENERAL_SETTINGS" Name="Главное"/>
       <String ID="STATIC_DISCORD_SETTINGS" Name="Дискорд"/>
@@ -605,6 +697,7 @@
       <String ID="STATIC_DAMAGE_METER_SETTINGS" Name="Счётчик Урона"/>
       <String ID="STATIC_ABNORM_BAR_SETTINGS" Name="Баффы"/>
       <String ID="STATIC_SPECIALIZED_TOOLS_SETTINGS" Name="Специнструменты"/>
+      <String ID="STATIC_CLASSES_SETTINGS" Name="Классы"/>
       <String ID="STATIC_LINKS_SETTINGS" Name="Ссылки"/>
       <String ID="STATIC_DEBUG_SETTINGS" Name="Отладка"/>
     </Settings>
@@ -616,10 +709,14 @@
       <String ID="STATIC_ACCEPT" Name="Принять"/>
       <String ID="STATIC_REJECT" Name="Отклонить"/>
       <String ID="STATIC_SETTINGS_LOAD" Name="Настройки загружены"/>
+      <String ID="STATIC_OPENDEFAULTBROWSER" Name="Открыть в браузере"/>
+      <String ID="STATIC_OPENFOLDER" Name="Открыть папку"/>
+      <String ID="MESSAGE_BUILD_UPLOADED" Name="Билд загружен на Honey Hunters World!"/>
+      <String ID="MESSAGE_GEAR_EXPORTED" Name="Снаряжение экспортировано в ./DataExport!"/>
     </Notifications>
     <RichPresence>
       <String ID="RPC_DESCRIPTION_IN_MAIN_MENU" Name="В Главном меню"/>
-      <String ID="RPC_DESCRIPTION_IN_LOADING_SCREEN" Name="В Экране загрузки"/>
+      <String ID="RPC_DESCRIPTION_IN_LOADING_SCREEN" Name="На Экране загрузки"/>
       <String ID="RPC_DESCRIPTION_IN_TOWN" Name="Бездействует"/>
       <String ID="RPC_DESCRIPTION_EXPLORING" Name="Исследует"/>
       <String ID="RPC_DESCRIPTION_HUNTING" Name="Охотится на {Monster} ({Health})"/>

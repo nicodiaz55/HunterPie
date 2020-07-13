@@ -6,6 +6,7 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
 -->
 <Strings lang="Deutsch">
   <Monsters>
+    <Monster ID="ems062_03" Name="Traings-Dummy"/>
     <Monster ID="em001_00" Name="Rathian"/>
     <Monster ID="em001_01" Name="Rosa Rathian"/>
     <Monster ID="em001_02" Name="Goldene Rathian"/>
@@ -18,6 +19,7 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
     <Monster ID="em018_00" Name="Yian Garuga"/>
     <Monster ID="em018_05" Name="Wundmal-Yian-Garuga"/>
     <Monster ID="em023_00" Name="Rajang"/>
+	  <Monster ID="em023_05" Name="Wütender Rajang"/>
     <Monster ID="em024_00" Name="Kushala Daora"/>
     <Monster ID="em026_00" Name="Lunastra"/>
     <Monster ID="em027_00" Name="Teostra"/>
@@ -26,13 +28,16 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
     <Monster ID="em036_00" Name="Lavasioth"/>
     <Monster ID="em037_00" Name="Nargacuga"/>
     <Monster ID="em042_00" Name="Barioth"/>
+	<Monster ID="em042_05" Name="Frosthauer-Barioth"/>
     <Monster ID="em043_00" Name="Dämonjho"/>
     <Monster ID="em043_05" Name="Wilder Dämonjho"/>
     <Monster ID="em044_00" Name="Barroth"/>
     <Monster ID="em045_00" Name="Uragaan"/>
+	<Monster ID="em050_00" Name="Alatreon"/>
     <Monster ID="em057_00" Name="Zinogre"/>
     <Monster ID="em057_01" Name="Höllen-Zinogre"/>
     <Monster ID="em063_00" Name="Brachydios"/>
+	<Monster ID="em063_05" Name="Tobender Brachydios"/>
     <Monster ID="em080_00" Name="Glavenus"/>
     <Monster ID="em080_01" Name="Säure-Glavenus"/>
     <Monster ID="em100_00" Name="Anjanath"/>
@@ -82,6 +87,7 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
     <Part ID="MONSTER_PART_LLEG" Name="Linkes Bein"/>
     <Part ID="MONSTER_PART_RLEG" Name="Rechtes Bein"/>
     <Part ID="MONSTER_PART_TAIL" Name="Schwanz"/>
+	<Part ID="MONSTER_PART_TAIL_TIP" Name="Schwanz (Spitze)"/>
     <Part ID="MONSTER_PART_ARMS" Name="Arme"/>
     <Part ID="MONSTER_PART_LEGS" Name="Beine"/>
     <Part ID="MONSTER_PART_LARM" Name="Linker Arm"/>
@@ -150,15 +156,47 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
     <Part ID="MONSTER_PART_LARM_ROCK" Name="Felsiger Linker Arm"/>
     <Part ID="MONSTER_PART_RARM_ROCK" Name="Felsiger Rechter Arm"/>
     <Part ID="MONSTER_PART_LEGS_ROCK" Name="Felsige Beine"/>
-    <Part ID="MONSTER_JAGRAS_SUMMONER" Name="Jagras Beschwörer"/>
+	  <Part ID="MONSTER_PART_ANTLERS" Name="Geweih"/>
+	  <Part ID="MONSTER_PART_HORN" Name="Horn"/>
+    <!--Part ID="MONSTER_JAGRAS_SUMMONER" Name="Jagras Beschwörer"/-->
     <!-- Removable parts -->
     <Part ID="MONSTER_PART_REMOVABLE_TAIL" Name="Abtrennbarer Schwanz"/>
     <Part ID="MONSTER_PART_REMOVABLE_HORNS" Name="Abtrennbare Hörner"/>
     <Part ID="MONSTER_PART_REMOVABLE_HEAD" Name="Abtrennbarer Kopf"/>
+	  <Part ID="MONSTER_PART_REMOVABLE_HEAD_ROCK" Name="Abtrennbarer Kopf (Felsen)"/>
+	  <Part ID="MONSTER_PART_REMOVABLE_CHEST_ROCK" Name="Abtrennbare Brust (Felsen)"/>
     <Part ID="MONSTER_PART_REMOVABLE_BALLOON" Name="Abtrennbarer Ballon"/>
     <Part ID="MONSTER_PART_REMOVABLE_HORNS_2" Name="Abtrennbare Hörner #2"/>
-    <Part ID="MONSTER_PART_REMOVABLE_LANTLER" Name="Abtrennbares Linkes Geweih"/>
-    <Part ID="MONSTER_PART_REMOVABLE_RANTLER" Name="Abtrennbares Rechtes Geweih"/>
+	  <Part ID="MONSTER_PART_BODY_LEGS" Name="Körper und Beine"/>
+	  <Part ID="MONSTER_PART_SILVER_SPIKES_HEAD" Name="Silberne Stacheln (Kopf)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_LARM" Name="Silberne Stacheln (Linker Arm)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_RARM" Name="Silberne Stacheln (Rechter Arm)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_LWING" Name="Silberne Stacheln (Linker Flügel)"/>
+    <Part ID="MONSTER_PART_SILVER_SPIKES_RWING" Name="Silberne Stacheln (Rechter Flügel)"/>
+    <!--Part ID="MONSTER_PART_REMOVABLE_LANTLER" Name="Abtrennbares Linkes Geweih"/>
+    <Part ID="MONSTER_PART_REMOVABLE_RANTLER" Name="Abtrennbares Rechtes Geweih"/-->
+	  <!-- Special parts -->
+    <Part ID="MONSTER_PART_BIG_FLINCH" Name="Starkes Zucken"/>
+    <Part ID="MONSTER_PART_RAGE" Name="Entfernbare Wut"/>
+    <Part ID="MONSTER_PART_COUNTERATTACK" Name="Gegenstoß"/>
+    <Part ID="MONSTER_PART_CHARGE" Name="Entfernbare Ladung"/>
+    <Part ID="MONSTER_PART_THROAT" Name="Kehle"/>
+    <Part ID="MONSTER_PART_INFLATED_TAIL" Name="Aufgeblasener Schwanz"/>
+    <Part ID="MONSTER_PART_SKY_FALL" Name="Himmelssturz"/>
+    <Part ID="MONSTER_PART_EMISSIONS" Name="Effluvia Ausscheidungen"/>
+    <Part ID="MONSTER_PART_GLOWING_HEAD" Name="Leuchtender Kopf"/>
+    <Part ID="MONSTER_PART_GLOWING_TAIL" Name="Leuchtender Schwanz"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_HEAD" Name="Aus dem Schnee erscheinen (Kopf)"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_BODY" Name="Aus dem Schnee erscheinen (Körper)"/>
+    <Part ID="MONSTER_PART_EMERGE_SNOW_TAIL" Name="Aus dem Schnee erscheinen (Schwanz)"/>
+    <Part ID="MONSTER_PART_SPIKES_HEAD" Name="Stacheln (Kopf)"/>
+    <Part ID="MONSTER_PART_SPIKES_LARM" Name="Stacheln (Linker Arm)"/>
+    <Part ID="MONSTER_PART_SPIKES_RARM" Name="Stacheln (Rechter Arm)"/>
+    <Part ID="MONSTER_PART_SPIKES_LWING" Name="Stacheln (Linker Flügel)"/>
+    <Part ID="MONSTER_PART_SPIKES_RWING" Name="Stacheln (Rechter Flügel)"/>
+    <Part ID="MONSTER_PART_SPIKES_TAIL" Name="Stacheln (Schwanz)"/>
+	  <Part ID="MONSTER_PART_REPEL" Name="Abwehr"/>
+	  <Part ID="MONSTER_PART_EXPLOSION_WEAKENING" Name="Explosions-Schwächung"/>
   </Parts>
   <Ailments>
     <Ailment ID="STATUS_UNKNOWN" Name="Unbekannt"/>
@@ -175,6 +213,7 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
     <Ailment ID="STATUS_DUNGPOD" Name="Misthülse"/>
     <Ailment ID="STATUS_SHOCKTRAP" Name="Schock Falle"/>
     <Ailment ID="STATUS_PITFALLTRAP" Name="Fallgrube"/>
+	<Ailment ID="STATUS_VINETRAP" Name="Rankenfalle"/>
     <Ailment ID="STATUS_ELDERSEAL" Name="Ältesten-Siegel"/>
     <Ailment ID="STATUS_SMOKING" Name="Rauchend"/>
     <Ailment ID="STATUS_FELYNETRAP" Name="Katzen-Falle"/>
@@ -242,6 +281,7 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
     <Stage ID="412" Name="Ursprungsinsel"/>
     <Stage ID="413" Name="Ursprungsinsel"/>
     <Stage ID="415" Name="Abgelegene Schlucht"/>
+	<Stage ID="416" Name="Abgelegene Schlucht"/>
     <Stage ID="501" Name="Standardraum"/>
     <Stage ID="502" Name="Privatraum"/>
     <Stage ID="503" Name="Luxusraum"/>
@@ -385,15 +425,34 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
     <Abnormality ID="MISC_024_00" Name="Heißgetränk"/>
     <Abnormality ID="MISC_026_00" Name="HP Regen"/>
     <Abnormality ID="MISC_027_00" Name="Schmelzbausch"/>
+	<Abnormality ID="MISC_030_00" Name="Schneemann-Kopf"/>
     <Abnormality ID="MISC_034_00" Name="Kraftzapfen"/>
     <Abnormality ID="MISC_035_00" Name="Eiswiderstand-Boost (L) (?)"/>
     <Abnormality ID="MISC_073_00" Name="Angriff und Verteidigung hoch (S) (?)"/>
+	<Abnormality ID="MISC_999_00" Name="Essens-Timer"/>
+	<Abnormality ID="GEAR_000_00" Name="Dämonen Munition"/>
+    <Abnormality ID="GEAR_001_00" Name="Rüstungs-Munition"/>
+    <Abnormality ID="GEAR_002_00" Name="Verstärken (?)"/>
+    <Abnormality ID="GEAR_003_00" Name="Schützender Glanz"/>
+    <Abnormality ID="GEAR_004_00" Name="Affiniäts-Gleiten (?)"/>
+	<Abnormality ID="GEAR_005_00" Name="Element Beschleunigung"/>
+    <Abnormality ID="GEAR_006_00" Name="Verborgene Kraft"/>
+    <Abnormality ID="GEAR_007_00" Name="Groll (?)"/>
+    <Abnormality ID="GEAR_008_00" Name="Adrenalin"/>
+    <Abnormality ID="GEAR_009_00" Name="Coole Katze (?)"/>
+    <Abnormality ID="GEAR_010_00" Name="Frostcraft"/>
+    <Abnormality ID="GEAR_015_00" Name="Offensive Verteidigung"/>
+    <Abnormality ID="GEAR_016_00" Name="Koaleszenz"/>
+    <Abnormality ID="GEAR_099_00" Name="Ausweich-Mantel (Atk)"/>
+    <Abnormality ID="GEAR_100_00" Name="Affinitäts-Booster"/>
   </Abnormalities>
    <!-- Client localization strings -->
   <Client>
     <Console>
       <String ID="CONSOLE_CONSOLE" Name="KONSOLE"/>
       <String ID="CONSOLE_SETTINGS" Name="EINSTELLUNGEN"/>
+      <String ID="CONSOLE_UPLOADBUILD" Name="BUILD HOCHLADEN"/>
+	  <String ID="CONSOLE_EXPORTGEAR" Name="AUSRÜSTUNG EXPORTIEREN"/>
       <String ID="CONSOLE_CHANGELOG" Name="PATCH NOTES"/>
       <String ID="CONSOLE_DISCORD" Name="DISCORD"/>
       <String ID="CONSOLE_GITHUB" Name="GITHUB"/>
@@ -403,6 +462,7 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
       <String ID="MESSAGE_QUIT" Name="Bist du sicher, dass du HunterPie beenden möchtest?"/>
       <String ID="TITLE_MISSING_PATH" Name="Monster Hunter World Pfad nicht gefunden"/>
       <String ID="MESSAGE_MISSING_PATH" Name="Du hast den Pfad zum Spiel noch nicht angegeben. Möchtest du dies nun tun?"/>
+      <String ID="MESSAGE_UPLOAD_BUILD" Name="Möchtest du deinen aktuellen Charakter Build zu Honey Hunters World hochladen?"/>
       <!-- Console Messages -->
       <String ID="MESSAGE_MAP_LOAD" Name="{HunterPie_Map} geladen"/>
       <String ID="MESSAGE_DISCORD_CONNECTED" Name="Starte neue RPC Verbindung"/>
@@ -479,12 +539,17 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
       <!-- Monster Widget -->
       <String ID="ENABLE_MONSTER_WIDGET" Name="Aktiviere Monster Widget"/>
       <String ID="ENABLE_MONSTER_WIDGET_DESC" Name="Wenn aktiv, wird das Monster Widget sichtbar sein, sobald es etwas anzuzeigen hat."/>
-      <String ID="STATIC_MONSTER_BAR_MODE" Name="Monsterleisten Modus"/>
+      <String ID="STATIC_MONSTER_HEALTH_STRING_FORMAT" Name="Monsterleisten Text Format:"/>
+      <String ID="STATIC_MONSTER_HEALTH_STRING_FORMAT_DESC" Name="Text Format der Monsterleiste."/>
+	  <String ID="ENABLE_MONSTER_USE_LOCKON" Name="Verwende den Lockon statt dem Karten-Pin um ein Monster als Ziel zu setzen"/>
+      <String ID="ENABLE_MONSTER_USE_LOCKON_DESC" Name="Wenn aktiv, wird HunterPie den ingame Monster-Lockon verwenden um ein Ziel zu verfolgen."/>
+	  <String ID="STATIC_MONSTER_BAR_MODE" Name="Monsterleisten Modus"/>
       <String ID="STATIC_MONSTER_BAR_MODE_DESC" Name="Ändert den Modus der Monsterleiste."/>
       <String ID="STATIC_MONSTER_BAR_MODE_0" Name="Zeige alle Monster gleichzeitig"/>
       <String ID="STATIC_MONSTER_BAR_MODE_1" Name="Zeige alle Monster gleichzeitig, aber hebe mein Ziel hervor"/>
       <String ID="STATIC_MONSTER_BAR_MODE_2" Name="Zeige nur das gejagte Monster"/>
       <String ID="STATIC_MONSTER_BAR_MODE_3" Name="Zeige alle Monster, aber verstecke inaktive Monster nach 15 Sekunden"/>
+	  <String ID="STATIC_MONSTER_BAR_MODE_4" Name="Zeige alle Monster bis eines ausgewählt wurde"/>
       <String ID="STATIC_MONSTER_BAR_MODE_HOTKEY" Name="Wechsel zw. den Monsterleisten Modi (HotKey):"/>
       <String ID="STATIC_MONSTER_BAR_MODE_HOTKEY_DESC" Name="Hotkey um zwischen den verschiedenen Monsterleisten Modi zu wechseln. Ändern des HotKeys erfordert einen Neustart von HunterPie um aktiv zu werden."/>
       <String ID="STATIC_MONSTER_BAR_DOCK" Name="Monsterleisten Ausrichtung:"/>
@@ -540,11 +605,23 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
       <String ID="ENABLE_HARVEST_BOX_EVERYWHERE" Name="Zeige Erntebox Widget konstant"/>
       <String ID="ENABLE_HARVEST_BOX_EVERYWHERE_DESC" Name="Wenn aktiv, wird das Erntebox Widget überall, also auf Expeditionen, den Leitlanden oder jeglicher anderen Monster-Zone, angezeigt."/>
       <String ID="STATIC_HARVEST_BOX_POSITION_DESC" Name="Ändert die Position des Erntebox Widgets."/>
+	    <String ID="ENABLE_HARVEST_BOX_COMPACT_MODE" Name="Kompaktmodus aktivieren"/>
+      <String ID="ENABLE_HARVEST_BOX_COMPACT_MODE_DESC" Name="Wenn aktiv, verwendet das Erntebox Widget ein kompakteres Design."/>
       <!-- Damage Meter -->
       <String ID="ENABLE_METER" Name="Aktiviere Schadens-Widget"/>
       <String ID="ENABLE_METER_DESC" Name="Wenn aktiv, wird das Schadens-Widget angezeigt, sobald es etwas anzuzeigen hat."/>
-      <String ID="ENABLE_METER_DPS" Name="Zeige DPS statt dem Gesamtschaden"/>
-      <String ID="ENABLE_METER_DPS_DESC" Name="Wenn aktiv, zeigt das Schadens-Widget den Schaden pro Sekunde statt dem Gesamtschaden an."/>
+	  <String ID="ENABLE_TIMER" Name="Zeige Timer"/>
+      <String ID="ENABLE_TIMER_DESC" Name="Wenn aktiv, wird der Timer des Schadens-Widget angezeigt."/>
+	  <String ID="ENABLE_TOTAL_DAMAGE" Name="Zeige Gesamtschaden"/>
+      <String ID="ENABLE_TOTAL_DAMAGE_DESC" Name="Wenn aktiv, zeigt das Schadens-Widget den individuellen Gesamtschaden an."/>
+      <String ID="ENABLE_METER_DPS" Name="Zeige Schaden pro Sekunde"/>
+      <String ID="ENABLE_METER_DPS_DESC" Name="Wenn aktiv, zeigt das Schadens-Widget den individuellen Schaden pro Sekunde an."/>
+	  <String ID="ENABLE_TIMER_IN_GL" Name="Aktiviere Timer in Expeditionen/den Leitlanden"/>
+      <String ID="ENABLE_TIMER_IN_GL_DESC" Name="Wenn aktiv, ist der Timer in Expeditionen und den Leitlanden sichtbar."/>
+      <String ID="ENABLE_ONLY_TIMER" Name="Zeige nur den Timer"/>
+      <String ID="ENABLE_ONLY_TIMER_DESC" Name="Wenn aktiv, zeigt das Schadens-Widget nur den Timer an und versteckt den Gruppenschaden."/>
+	  <String ID="ENABLE_METER_ONLY_MYSELF" Name="Zeige nur meinen Schaden"/>
+      <String ID="ENABLE_METER_ONLY_MYSELF_DESC" Name="Wenn aktiv, wird nur der eigene Schaden angezeigt."/>
       <String ID="STATIC_METER_PLAYER_1" Name="Erster Spieler"/>
       <String ID="STATIC_METER_PLAYER_2" Name="Zweiter Spieler"/>
       <String ID="STATIC_METER_PLAYER_3" Name="Dritter Spieler"/>
@@ -564,7 +641,10 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
       <String ID="STATIC_ABNORM_TAB_HH" Name="Jagdhorn"/>
       <String ID="STATIC_ABNORM_TAB_ORCHESTRA" Name="Orchester"/>
       <String ID="STATIC_ABNORM_TAB_DEBUFF" Name="Debuffs"/>
+	  <String ID="STATIC_ABNORM_TAB_GEAR" Name="Ausrüstung"/>
       <String ID="STATIC_ABNORM_TAB_CONSUMABLE" Name="Verbrauchsmaterial"/>
+	  <String ID="ENABLE_SHOW_ABNORM_NAMES" Name="Zeige Abnormalitäten-Namen"/>
+      <String ID="ENABLE_SHOW_ABNORM_NAMES_DESC" Name="Wenn aktiv, werden die Namen von Abnormalitäten angezeigt."/>
       <!-- Specialized Tool Widget-->
       <String ID="STATIC_PRIMARY_SPEC_TOOL" Name="Primäres Spezialgerät"/>
       <String ID="STATIC_SECONDARY_SPEC_TOOL" Name="Sekundäres Spezialgerät"/>
@@ -575,6 +655,27 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
       <String ID="STATIC_COLOR" Name="Farbe:"/>
       <String ID="STATIC_PRIMARY_SPEC_TOOL_POSITION_DESC" Name="Ändert die Position des primären Spezialgerät-Widgets."/>
       <String ID="STATIC_SECONDARY_SPEC_TOOL_POSITION_DESC" Name="Ändert die Position des sekundären Spezialgerät-Widgets."/>
+	  <!-- Class Widget -->
+      <String ID="ENABLE_INSECT_GLAIVE_HELPER" Name="Aktiviere Insektenglefen Hilfe"/>
+      <String ID="ENABLE_INSECT_GLAIVE_HELPER_DESC" Name="Wenn aktiv, wird das Insektenglefen Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+      <String ID="ENABLE_CHARGE_BLADE_HELPER" Name="Aktiviere Energieklingen Hilfe"/>
+      <String ID="ENABLE_CHARGE_BLADE_HELPER_DESC" Name="Wenn aktiv, wird das Energieklingen Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+      <String ID="ENABLE_SWITCH_AXE_HELPER" Name="Aktiviere Morph-Axt Hilfe"/>
+      <String ID="ENABLE_SWITCH_AXE_HELPER_DESC" Name="Wenn aktiv, wird das Morph-Axt Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+      <String ID="ENABLE_GUN_LANCE_HELPER" Name="Aktiviere Gewehrlanzen Hilfe"/>
+      <String ID="ENABLE_GUN_LANCE_HELPER_DESC" Name="Wenn aktiv, wird das Gewehrlanzen Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+	  <String ID="ENABLE_LONGSWORD_HELPER" Name="Aktiviere Langschwert Hilfe"/>
+      <String ID="ENABLE_LONGSWORD_HELPER_DESC" Name="Wenn aktiv, wird das Langschwert Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+	  <String ID="ENABLE_BOW_HELPER" Name="Aktiviere Bogen Hilfe"/>
+      <String ID="ENABLE_BOW_HELPER_DESC" Name="Wenn aktiv, wird das Bogen Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+      <String ID="ENABLE_HAMMER_HELPER" Name="Aktiviere Hammer Hilfe"/>
+      <String ID="ENABLE_HAMMER_HELPER_DESC" Name="Wenn aktiv, wird das Hammer Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+      <String ID="ENABLE_DUALBLADES_HELPER" Name="Aktiviere Doppelklingen Hilfe"/>
+      <String ID="ENABLE_DUALBLADES_HELPER_DESC" Name="Wenn aktiv, wird das Doppelklingen Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+      <String ID="ENABLE_LANCE_HELPER" Name="Aktiviere Lanzen Hilfe"/>
+      <String ID="ENABLE_LANCE_HELPER_DESC" Name="Wenn aktiv, wird das Lanzen Widget angezeigt, sobald du diese Waffenart ausrüstest."/>
+      
+	  <String ID="STATIC_CLASSES_BETA_WARNING" Name="Achtung: Die Klassenhelfer Widgets sind noch in der Entwicklung und weitere Klassen werden folgen. Jeder Klassenhelfer hat eigene Einstellungen, also ist es möglich die Positionen der Widgets für die jeweilge Klasse anzupassen. Verwende den Design Modus um dieses Widget zu skalieren und zu ebwegen."/> 
       <!-- Links -->
       <String ID="STATIC_HUNTERPIE_WIKI" Name="Dokumentation"/>
       <String ID="STATIC_HUNTERPIE_WIKI_DESC" Name="HunterPie Offizielle Dokumentation."/>
@@ -600,6 +701,8 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
       <String ID="STATIC_BUTTON_SAVE" Name="Speichern"/>
       <String ID="STATIC_REQUIRES_RESTART" Name="(benötigt Neustart)"/>
       <String ID="STATIC_POSITION" Name="Position"/>
+      <String ID="STATIC_COPYCLIPBOARD" Name="In die Zwischenablage kopieren"/>
+	  <String ID="STATIC_OPACITY" Name="Transparenz"/>
       <!-- Settings Side bar-->
       <String ID="STATIC_GENERAL_SETTINGS" Name="Allgemein"/>
       <String ID="STATIC_DISCORD_SETTINGS" Name="Discord"/>
@@ -608,7 +711,8 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
       <String ID="STATIC_HARVEST_BOX_SETTINGS" Name="Erntebox"/>
       <String ID="STATIC_DAMAGE_METER_SETTINGS" Name="Schadens-Widget"/>
       <String ID="STATIC_ABNORM_BAR_SETTINGS" Name="Buff-Leiste"/>
-      <String ID="STATIC_SPECIALIZED_TOOLS_SETTINGS" Name="Specialgeräte"/>
+      <String ID="STATIC_SPECIALIZED_TOOLS_SETTINGS" Name="Spezialgeräte"/>
+	  <String ID="STATIC_CLASSES_SETTINGS" Name="Klassen"/>
       <String ID="STATIC_LINKS_SETTINGS" Name="Links"/>
       <String ID="STATIC_DEBUG_SETTINGS" Name="Debug"/>
     </Settings>
@@ -620,6 +724,10 @@ Gerade bei den Abnormalitäten / Statusveränderungen des Spielers gibt es mit (
       <String ID="STATIC_ACCEPT" Name="Akzeptieren"/>
       <String ID="STATIC_REJECT" Name="Ablehnen"/>
       <String ID="STATIC_SETTINGS_LOAD" Name="Einstellungen geladen"/>
+      <String ID="STATIC_OPENDEFAULTBROWSER" Name="Im Browser öffnen"/>
+	  <String ID="STATIC_OPENFOLDER" Name="Ordner öffnen"/>
+      <String ID="MESSAGE_BUILD_UPLOADED" Name="Build wurde zu Honey Hunters World hochgeladen!"/>
+	  <String ID="MESSAGE_GEAR_EXPORTED" Name="Ausrüstung wurde nach ./DataExport exportiert!"/>
     </Notifications>
     <RichPresence>
       <String ID="RPC_DESCRIPTION_IN_MAIN_MENU" Name="Im Hauptmenü"/>

@@ -2,9 +2,12 @@
 
 using System.Runtime.InteropServices;
 
-namespace HunterPie.Core {
-    public class KeyboardHookHelper {
-        public enum KeyboardKeys{
+namespace HunterPie.Core
+{
+    public class KeyboardHookHelper
+    {
+        public enum KeyboardKeys
+        {
             None = 0,
             LButton = 1,
             RButton = 2,
@@ -138,6 +141,7 @@ namespace HunterPie.Core {
             F24 = 135,
             NumLock = 144,
             ScrollLock = 145,
+            Scroll = 145,
             LShift = 160,
             RShift = 161,
             LeftCtrl = 162,
@@ -203,29 +207,9 @@ namespace HunterPie.Core {
         /*
          Deals with the keyboard
         */
-        public static readonly int  WH_KEYBOARD_LL = 0xD;
+        public static readonly int WH_KEYBOARD_LL = 0xD;
 
-        public enum KeyboardMessage {
-            WM_KEYDOWN = 0x0100,
-            WM_KEYUP = 0x0101,
-            WM_SYSKEYDOWN = 0x0104,
-            WM_SYSKEYUP = 0x0105
-        }
-
-        public static KeyboardKeys GetKeyboardKeyByID(int id) {
-            return (KeyboardKeys)Enum.Parse(typeof(KeyboardKeys), id.ToString());
-        }
-
-        public delegate IntPtr HookProc(int code, IntPtr wParam, IntPtr lParam);
-
-        [DllImport("user32.dll")]
-        public static extern IntPtr SetWindowsHookEx(int idHook, HookProc lpfn, IntPtr hmod, int dwThreadId);
-
-        [DllImport("user32.dll")]
-        public static extern bool UnhookWindowsHookEx(IntPtr hhk);
-
-        [DllImport("user32.dll")]
-        public static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
+        public static KeyboardKeys GetKeyboardKeyByID(int id) => (KeyboardKeys)Enum.Parse(typeof(KeyboardKeys), id.ToString());
 
         [DllImport("user32.dll")]
         public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vlc);
@@ -233,41 +217,5 @@ namespace HunterPie.Core {
         [DllImport("user32.dll")]
         public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 
-    }
-    public class KeyboardHook {
-        [StructLayout(LayoutKind.Sequential)]
-        internal struct KeyboardLowLevelHookStruct {
-            public int vkCode;
-            public int scanCode;
-            public int flags;
-            public int time;
-            public IntPtr dwExtraInfo;
-        }
-        KeyboardHookHelper.HookProc KeyboardProc;
-        public event EventHandler<KeyboardInputEventArgs> OnKeyboardKeyPress;
-
-        public IntPtr KeyboardHk { get; private set; } = IntPtr.Zero;
-
-        public KeyboardHook() {
-            KeyboardProc = LowLevelKeyboardProc;
-        }
-        
-        private IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam) {
-            if (nCode >= 0) {
-                var st = Marshal.PtrToStructure<KeyboardLowLevelHookStruct>(lParam);
-                OnKeyboardKeyPress?.Invoke(this, new KeyboardInputEventArgs(st.vkCode, (KeyboardHookHelper.KeyboardMessage)wParam));
-            }
-            return KeyboardHookHelper.CallNextHookEx(IntPtr.Zero, nCode, wParam, lParam);
-        }
-
-        public void InstallHooks() {
-            if (KeyboardHk == IntPtr.Zero) {
-                KeyboardHk = KeyboardHookHelper.SetWindowsHookEx(KeyboardHookHelper.WH_KEYBOARD_LL, KeyboardProc, IntPtr.Zero, 0);
-            }
-        }
-
-        public void UninstallHooks() {
-            KeyboardHookHelper.UnhookWindowsHookEx(KeyboardHk);
-        }
     }
 }

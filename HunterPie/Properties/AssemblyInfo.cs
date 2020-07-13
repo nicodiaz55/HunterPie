@@ -1,6 +1,5 @@
 ﻿using System.Reflection;
 using System.Resources;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Media;
@@ -54,7 +53,7 @@ using System.Windows.Media;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.3.85")]
-[assembly: AssemblyFileVersion("1.0.3.85")]
+[assembly: AssemblyVersion("1.0.3.94")]
+[assembly: AssemblyFileVersion("1.0.3.94")]
 [assembly: NeutralResourcesLanguage("en")]
 
